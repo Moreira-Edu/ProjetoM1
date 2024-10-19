@@ -1,3 +1,5 @@
+//easteregg
+
 function capturarBotao(EventTarget) {
   botao = EventTarget;
   botao = EventTarget.target.id;
