@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contos de Midgard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,400;1,700&family=Righteous&family=Yuji+Hentaigana+Akari&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/selecaoDePersonagem.css">
+    <link rel="stylesheet" href="CSS/gameScreen.css">
+    <link rel="stylesheet" href="CSS/confGeral.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalhoContainer">
+            <h2 class="titulo tituloCabecalho">Contos de Midgard</h2>
+            <img src="imgs/kafra1.gif" alt="imagem da funcionaria kafra" class="logoCabecalho">
+            <nav class="cabecalhoNav">
+                <ul class="navList">
+                    <li>
+                        <a href="https://www.linkedin.com/in/edu-moreira-aa9304226" class="navLink github"><img src="imgs/linkedinIcon.svg" alt="Logo da linkedin"
+                                class="logoLinkedin"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Moreira-Edu" class="navLink linkedin"><img src="imgs/githubIcon.svg" alt="Logo do Github"
+                                class="logoGithub"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="principal">
+       
+
+        <div class="principalContainer">
+
+            <section class="menuStart">
+                <div class="cartao cartaoStart">
+                    <button class=" botao botaoStart texto">Pressione para começar</button>
+                    <button class="botao botaoSobre texto">Sobre</button>
+                    <img src="imgs/PORING.gif" alt="Imagem do poring" class="poringImg">
+                </div>
+
+                <article class=" cartao cartaoSobre invisivel" id="cartaoSobre">
+                    <h2 class="titulo tituloSobre">Sobre</h2>
+                    <p class="texto paragrafoSobre"> Projeto inspirado no mundo de Ragnarok online.
+                        <a href="https://browiki.org/wiki/Ragnar%C3%B6k_Online" class="linkSobre">Mais Sobre.</a><br> Eu
+                        não
+                        possuo qualquer direito sobre imagens e sons utilizados no projeto. <br> O projeto se pretende
+                        de
+                        uso restrito e experimental, portanto
+                        sem fins lucrativos. <br> Criado a partir do conceito Mobile First, buscando paramêtro de boas
+                        práticas de Dev.
+                    </p>
+
+                </article>
+
+            </section>
+            <section class="personagemEscolha invisivel">
+                <form class="" id="botaoRetornar">
+                    <button class="texto botao botaoRetornar" type="button" onClick="window.location.reload();">Retornar ao
+                        menu
+                    </button>
+                </form>
+                <div class="cartaoSelecao">
+
+                    <article class="cartaoPersonagem" id="personagem1">
+                        <button class="botaoPersonagem personagem1" id="personagem1">
+                            <h3 class="texto nomePersonagem" id="personagem1">Arjen</h3>
+                            <img src="imgs/mMageBattle.gif" alt="imagem do mago" class="imgPersonagem personagem"
+                                id="personagem1">
+                            <p class="texto descricaoPersonagem" id="personagem1">Considerado um mago excepcional, Arjen pode ser um pouco temperamental
+                                às vezes.</p>
+                        </button>
+                    </article>
+
+                    <article class="cartaoPersonagem" id="personagem2">
+                        <button class="botaoPersonagem personagem2" id="personagem2">
+
+                            <h3 class="texto nomePersonagem" id="personagem2">Ceci e Doko</h3>
+                            <img src="imgs/kids1.gif" alt="imagem do pistoleiro" class="imgPersonagem"
+                                id="personagem2">
+                            <p class="texto descricaoPersonagem" id="personagem2">Gemeos inseparáveis, é o que dizem os aldeões.
+                                Apesar de estar sempre ao lado de Doko, Ceci gostaria de ser vista como um indíviduo de vez em quando.
+                            </p>
+                        </button>
+                    </article>
+                    <article class="cartaoPersonagem" id="personagem3">
+                        <button class="botaoPersonagem personagem3" id="personagem3">
+
+                            <h3 class="texto nomePersonagem personagem" id="personagem3">Ceci</h3>
+                            <img src="imgs/CeciIdle.gif" alt="imagem da noviça" class="imgPersonagem personagem"
+                                id="personagem3">
+                            <p class="texto descricaoPersonagem personagem" id="personagem3">Criada perto das minas do  Monte Mjolnir, Ceci
+                                possui grande coragem.
+                            </p>
+                        </button>
+                    </article>
+                </div>
+
+            </section>
+            <section class="loadScreen invisivel">
+                <img src="imgs/musicEmote.gif" alt="Emote de música">                
+                    <p class="texto">Carregando</p>          
+               
+            </section>
+
+
+            <section class="mainGameScreen invisivel">
+                <form class="" id="botaoRetornar">
+                    <button class="texto botao botaoRetornar" type="button" onClick="window.location.reload();">Retornar ao
+                        menu
+                    </button>
+                </form>
+                <div class="gameScreen">
+
+                    <article class="gameActing">
+
+                        <p class="dialogos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit
+                            in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            .</p>
+                        <button class=" texto botao escolha continue">Escolha</button>
+
+
+                </div>
+                <div class="cenario">
+                    <img src="" alt="" class="personagens char1">
+                    <img src="" alt="" class="personagens char2">
+                    <img src="" alt="" class="personagens char3">
+                </div>
+
+            </section>
+
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <p class="titulo">Edu moreira</p>
+            <a href="https://instagram.com/samedi_lignes?utm_medium=copy_link"><img src="imgs/instagramIcon.svg" alt="Logo do instagram" class="logoInstagram"></a>
+        </div>
+
+    </footer>
+    <script src="JS/game3.js"></script>
+    <script src="JS/game2.js"></script>
+    <script src="JS/game.js"></script>
+    <script src="JS/testebotao.js"></script>
+    <script src="JS/startScreen.js"></script>
+
+</body>
+
+</html>

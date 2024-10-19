@@ -1,0 +1,177 @@
+.cabecalho {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+}
+.cabecalhoContainer {
+    padding: 14px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.tituloCabecalho {
+    font-size: 2.0rem;
+    margin-left: 3px;
+    align-self: center;
+}
+
+.logoCabecalho {
+    margin: 1px auto;
+    width: 50px;
+    height: 120px;
+}
+
+.navList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoLinkedin {
+    width: 8vh;
+}
+
+.logoGithub {
+    width: 8vh;
+}
+
+
+/*acima cabecalho*/
+
+.principal {
+    margin: auto 0;
+    box-sizing: border-box;
+    width: 100%;
+    
+
+}
+.menuStart{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../imgs/RagMainScreenBackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cartaoStart {
+   
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 3em 3em 3em;
+    justify-content: center;
+    row-gap: 2px;
+}
+
+
+
+.botaoSobre {
+    margin-top: 5px;
+}
+
+.poringImg {
+    place-self: center;
+    grid-row: 1;
+}
+
+.cartaoSobre {    
+    bottom: 15vw;
+    margin: auto 40px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 2fr 5fr;
+    align-items: flex-end;
+}
+
+.tituloSobre {
+    place-self: center;
+}
+
+.paragrafoSobre {
+    place-self: center;
+}
+
+/* acima principal*/
+
+.rodape {
+    height: 22vw;
+    max-height: 100px;
+    margin-left: 2em;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: start;
+    align-items: center;
+}
+
+.rodape p {
+    font-size: 2rem;
+}
+
+.logoInstagram {
+    margin-left: 1em;
+    width: 2rem;
+}
+
+@media screen and (min-width: 950px){
+    .cabecalho{
+        width: 100%;
+        background: linear-gradient(to bottom, #FB871C, #FFFFFF) no-repeat;
+    }
+    .logoCabecalho{
+        display: none;
+    }
+    .tituloCabecalho{
+        font-size: larger;
+        grid-column: 2;
+       
+    }
+    .navList{
+        flex-direction: row;
+        justify-content: space-evenly;
+        grid-column: 3;
+    }
+    .principalContainer{
+        display: grid;
+    }
+    .menuStart{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .cartaoStart{
+        align-self: center;
+        width: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+
+    .cartaoSobre{
+        align-self: center;
+        place-self: center;
+    }
+    .poringImg{
+        width: 4vw;
+    }
+    .rodape{
+        margin-top: auto;
+        place-self: end;
+        background: linear-gradient(to top, #FB871C, #FFFFFF) no-repeat;
+        opacity: 0.8; 
+
+    }
+    .rodape p{
+        margin-left:150px;
+        font-size: 3vw;
+        
+    }
+    .logoInstagram{
+        width: 5vw;
+    }
+}

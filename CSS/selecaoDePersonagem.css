@@ -1,0 +1,127 @@
+.personagemEscolha {
+    width: 100%;
+}
+
+.botaoRetornar{
+    font-size: 1em;
+    margin: 20px 20px;
+    
+}
+
+.cartaoSelecao {
+    width: 100%;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.8;
+    
+}
+.cartaoPersonagem{
+    margin-bottom: 15px;
+    background-color: whitesmoke;
+    width: 50vw;
+    border: none;    
+}
+
+.cartaoPersonagem h3{
+    width: auto;
+}
+
+.botaoPersonagem{
+    
+    background-color: whitesmoke;
+    width: 50vw;
+    border: none;    
+}
+
+
+
+.nomePersonagem{
+    background-color: #2896EB;
+    border: solid 1px #0c5085;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.descricaoPersonagem{
+    height: auto;
+    font-size: 1em;
+}
+
+.botaoPersonagem:hover{
+    border: solid #2BBFEB;
+    cursor: pointer;
+}
+
+.imgPersonagem{
+    height: 17vh;
+}
+.loadScreen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: auto;
+    background: linear-gradient(-45deg, #fB871C, #3D58EB);
+    background-size: 400% 400%;
+    animation: gradient 2s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.loadScreen p{
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 950px){
+    .botaoRetornar{
+        align-self: center;
+    }
+
+    .personagemEscolha{
+        height: 50vh;
+        width: 60vw;
+        place-self: center;
+        align-self:  center;
+    }
+    .cartaoSelecao{
+        width: 100%; 
+        height: auto;
+        flex-direction: row;       
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .cartaoPersonagem{
+       width: 15vw;
+       height: 5vw;
+        
+    }
+    .botaoPersonagem{
+        width: auto;
+    }
+    .descricaoPersonagem{
+        padding: 4px;
+        margin-top: 10px;
+        height: 9em;
+        
+    }
+    
+    .imgPersonagem{
+        margin-top: 5px;
+        height: 7vw;
+    }
+    
+}
